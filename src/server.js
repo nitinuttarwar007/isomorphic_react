@@ -4,7 +4,7 @@ import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import App from './components/App'
 const app = express();
-app.set('view enjine', 'ejs');
+app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 app.get('*', (req, res) => {
     const context = {};
@@ -16,4 +16,4 @@ app.get('*', (req, res) => {
         )
     });
 });
-app.listen(4000, () => console.log('App listening at 4000'));
+app.listen(3000, () => console.log('App listening at 3000'));
