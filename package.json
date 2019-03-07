@@ -4,7 +4,9 @@
   "description": "Isomorphic Hello World",
   "main": "server.js",
   "scripts": {
-    "build": "webpack",
+    "build:server": "webpack",
+    "build:client": "webpack --config webpack.client.config.js",
+    "build": "npm run build:server & npm run build:client",
     "serve": "node dist/server.js",
     "start": "npm run build && npm run serve"
   },

@@ -6,6 +6,8 @@ import App from './components/App'
 const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'src/views');
+//Enable static render for public folder in express
+app.use('/static', express.static('public'));
 app.get('*', (req, res) => {
     const context = {};
     res.render('layout', {

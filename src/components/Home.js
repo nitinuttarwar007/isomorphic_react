@@ -1,4 +1,4 @@
 import React from 'react';
 export default () => (
-    <div>Home</div>
+    <div>Hello World</div>
 );
